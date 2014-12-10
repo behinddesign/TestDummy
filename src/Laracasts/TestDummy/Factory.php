@@ -79,7 +79,8 @@ class Factory {
     {
         if ( ! $basePath)
         {
-            $basePath = file_exists(base_path('tests')) ? base_path('tests') : app_path('tests');;
+            //$basePath = file_exists(base_path('tests')) ? base_path('tests') : app_path('tests');;
+            $basePath = "./tests";
         }
 
         $finder = new FixturesFinder($basePath);
